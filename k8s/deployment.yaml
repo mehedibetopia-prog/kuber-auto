@@ -20,7 +20,7 @@ spec:
       containers:
       - name: nginx
 
-        image: mehedi4444/my-nginx-app
+        image: mehedi4444/my-nginx-app:latest
 
         imagePullPolicy: Always
 
