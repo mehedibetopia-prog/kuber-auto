@@ -2,6 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- namespace.yaml
-- deployment.yaml
-- service.yaml
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
+
+images:
+  - name: mehedi4444/my-nginx-app
+    newTag: latest
